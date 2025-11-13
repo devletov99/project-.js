@@ -18,27 +18,25 @@ const carData = {
   year: 2007,
   color: 'серебристый',
   transmission: 'механика',
-  owner: userData.name, 
 }
+carData.owner = userData.name 
 
 // №3 Функция которая проверяет есть ли свойство 'максимальная скорость'.
 
-const getPropertyTopSpeed = property => {
+const getObjectyMaxSpeed = property => {
     if(property.topSpeed) {
       return true;
   } else {
       return property.topSpeed = 180;
   }  
 };
-
-getPropertyTopSpeed(carData)
+getObjectyMaxSpeed(carData)
 
 // №4 Функция, которая получает первым аргументом  — объект, а вторым аргументом — свойство объекта, которое выводит его значение.
 
-const getObjectProperty = (object, propertyAge) => {
-  return [object, propertyAge]
+const getObjectProperty = (obj, propertyAge) => {
+  return (propertyAge)
 }
-
 console.log(getObjectProperty (userData, userData.age));
 
 // №5 Массив который содержит название продуктов.
@@ -47,7 +45,7 @@ const products = ['хлеб', 'молоко', 'мясо', 'конфеты']
 
 // №6 Массив, состоящий из объектов, где объект представляет собой книгу. И добавить ещё одну книгу методом push.
 
-const listBooks = [
+const listBook = [
   {
     title: 'война и мир',
     author: 'Лев Николаевич Толстой',
@@ -70,7 +68,7 @@ const listBooks = [
    authorFrom: 'Российская империя'
   },
 ]
-listBooks.push(
+listBook.push(
    {
     title: 'Жизнь взаймы',
     author: 'Эрих Мария Ремарк',
@@ -98,15 +96,10 @@ const universeBooks = [
     authorFrom: 'США',
   },
 ]
-const mergeArrays = [...listBooks, ...universeBooks]
+const mergeArrays = [...listBook, ...universeBooks]
 console.log(mergeArrays)
 
 // №8 С методом массива map установить редкую книгу(true, false).
 
-const GetIsRare = universeBooks.map(function (book) {
-    if (book.yearRelease >= 2000 ) {
-      return 'true'
-  } else { 
-      return 'false'
-  }
-})
+const  universeBooksNew = universeBooks.map(book => book.yearRelease >= 2000)
+console.log(universeBooksNew)
