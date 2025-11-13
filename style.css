@@ -1,0 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0px;
+  font-family: Montserrat; 
+  font-weight: 400;
+  color: #515076;
+}
+
+.container {
+  position: relative;
+  width: 1280px;
+  height: 1715px;
+  margin: 0 auto;
+  background: none;
+}
+
+.background-image {
+  background-image: url("/img/background-flowers.png");
+  background-repeat: no-repeat;
+  position: absolute;
+  width: 790px;
+  height: 697px;
+  bottom: 1118px;
+  left: 85px;
+  z-index: -1;
+}
+
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 45px;
+  list-style: none;
+  margin: auto;
+}
+
+.main-title {
+  font-size: 70px;
+  line-height: 78px;
+  margin: 220px 132px 110px 132px;
+  text-align: center;
+}
+
+.card-container {
+  width: 340px;
+  height: 573px;
+  padding: 25px;
+  background-color:#F7F7FA ;
+  box-shadow: 2px 2px 10px 0px rgba(81, 80, 118, 0.1);
+}
+
+.product-image {
+  width: 290px;
+  height: 245px;
+}
+
+.product-category {
+  color: #A5A3B9;
+  font-size: 12px;
+  line-height: 24px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 5px;
+  display: block;
+}
+
+.product-name {
+  font-size: 20px;
+  line-height: 27px;
+  font-weight: 700;
+}
+
+.product-descripton {
+  font-size: 13px;
+  line-height: 18px;
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+
+.product-compound {
+  font-size: 13px;
+  line-height: 18px;
+  margin-left: 15px;
+  margin-bottom: 25px;
+  margin-top: 5px;
+}
+
+.product-compaund-item {
+  margin-top: 5px;
+  list-style: circle;
+}
+
+.product-price-label {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.product-price {
+  font-size: 20px;
+  line-height: 24px;
+}
+
+.product-price-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+
+.product-catalog__button {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.button-item {
+  width: 200px;
+  height: 40px;
+  background-color: #515076;
+  border: none;
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 17px;
+  cursor: pointer; 
+  transition: background-color 0.3s; 
+}
+
+.button-item.bg-red {
+  background-color: #FF0000; 
+}
