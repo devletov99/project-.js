@@ -33,8 +33,9 @@ checksCarMaxSpeed(carData)
 // №4 Функция, которая получает первым аргументом  — объект, а вторым аргументом — свойство объекта, которое выводит его значение.
 
 const getObjectProperty = (object, property) => {
-  return console.log(object[property]);
+  return (object[property]);
 }
+console.log(getObjectProperty)
 
 // №5 Массив который содержит название продуктов.
 
