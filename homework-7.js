@@ -1,4 +1,4 @@
-import { userComments } from "./homework.js"
+import { userComments } from "./comments.js"
 
 // Создать массив чисел от 1 до 10. Отфильтровать его таким образом, что бы мы получил массив чисел, начиная с 5.
 
@@ -13,9 +13,7 @@ console.log(!!knifeKevice)
 
 // Написать функцию, которая аргументом будет принимать массив и изменять его порядок на противоположный.
 
-const changeOrderArray = kitchenDevices.reverse()
-
-const changeOrderArrayNom = nombers.reverse()
+const changeOrderArrays = [nombers, kitchenDevices].map(object => object.reverse())
 
 // Вывести в консоль массив тех комментариев, почта пользователей которых содержит ".com"
 
@@ -36,12 +34,9 @@ const checkingBodyLength = userComments.map(object => ({...object, isInvalid: ob
 // Почитать про метод массива reduce. Используя его, вывести массив почт и провернуть тоже самое с помощью метода map
 
 const getArrayEmails = userComments.reduce((result, user) => [...result, user.email], [])
-console.log(getArrayEmails)
 
 const arrayEmails = userComments.map(user => user.email)
-console.log(arrayEmails)
 
 // Почитать про методы toString(), join() и перебрав массив с задания №11, привести его к строке.
 
 const receiveString = arrayEmails.toString()
-console.log(receiveString)
