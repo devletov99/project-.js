@@ -5,12 +5,12 @@ const productList = document.querySelector('#product-list')
 
 // По аналогии из лекции — создать и реализовать шаблон для продуктовых карточек.
 
-const productCards = (products) => {
+const clearListProductCards = (products) => {
   productList.innerHTML= '';
  
 products.forEach(product => {
   const productClone = productTemplate.content.cloneNode(true);
-  productClone.querySelector('.product-image').src = product.img
+  productClone.querySelector('.product-image').src = `/img/${product.img}`
   productClone.querySelector('.product-category').textContent = product.category
   productClone.querySelector('.product-name').textContent = product.name
   productClone.querySelector('.product-descripton').textContent = product.descripton
@@ -22,7 +22,7 @@ products.forEach(product => {
 
 // Используя метод .reduce(), получить строку, которая состоит из названий продуктовых карточек, разделенных точкой с запятой
 
-const stringNameProduct = products.reduce((acc, product) => acc ? acc + "; " + product.name : product.name, "")
+const stringNameProduct = products.reduce((acc, product) => [ ...acc, product.name], "").join(';')
 
 // Используя метод .reduce(), получить массив объектов, где ключем является название продукта, а значением - его описание
 
@@ -42,7 +42,7 @@ const initializeCards = () => {
   }
   
   const selectProduct = products.slice(0, numberOfCards);
-  productCards(selectProduct)
+  clearListProductCards(selectProduct)
 }
 
 initializeCards()
