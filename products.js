@@ -1,6 +1,6 @@
 export const products = [
   {
-    img: 'muss.png',
+    img: 'muss',
     category: 'для нормальной кожи',
     name: 'Увлажняющий мусс', 
     descripton: 'Глубоко увлажняют кожу лица, оставляя её мягкой и гладкой.',
@@ -13,7 +13,7 @@ export const products = [
     price: 2750,
   },
   {
-    img: 'mask.png',
+    img: 'mask',
     category: 'для нормальной кожи',
     name: 'Увлажняющая маска', 
     descripton: 'Способствует удерживанию влаги в верхних слоях кожи.',
@@ -22,11 +22,10 @@ export const products = [
       'минералы',
       'минералы'
     ],
-    cost: 'цена',
     price: 3500,
   },
   {
-    img: 'gel.png',
+    img: 'gel',
     category: 'для нормальной кожи',
     name: 'Гель для умывания', 
     descripton: 'Интенсивно очищает, не повреждает защитный барьер кожи.',
@@ -35,11 +34,10 @@ export const products = [
       'витамины С, А, РР, В И Е',
       'солнцезащитные компоненты',
     ],
-    cost: 'цена',
     price: 1650,
   },
   {
-    img: 'set№1.png',
+    img: 'set-1',
     category: 'для нормальной кожи',
     name: 'Подарочный набор №1', 
     descripton: 'Набор, состоящий из увлажняющего крема и маски.',
@@ -48,11 +46,10 @@ export const products = [
       'минералы',
       'масла',
     ],
-    cost: 'цена',
     price: 4750,
   },
   {
-    img: 'set№5.png',
+    img: 'set-5',
     category: 'для нормальной кожи',
     name:'Подарочный набор №5', 
     descripton: 'Весь набор средств Invisible symphony, крем, маска, мусс и гель для умывания.',
@@ -61,7 +58,6 @@ export const products = [
       'минералы', 
       'масла',
     ],
-    cost: 'цена',
     price: 7520,
   },
 ]

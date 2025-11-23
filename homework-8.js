@@ -5,12 +5,12 @@ const productList = document.querySelector('#product-list')
 
 // По аналогии из лекции — создать и реализовать шаблон для продуктовых карточек.
 
-const clearListProductCards = (products) => {
+const renderProducts = (products) => {
   productList.innerHTML= '';
  
 products.forEach(product => {
   const productClone = productTemplate.content.cloneNode(true);
-  productClone.querySelector('.product-image').src = `/img/${product.img}`
+  productClone.querySelector('.product-image').src = `/img/${product.img}.png`
   productClone.querySelector('.product-category').textContent = product.category
   productClone.querySelector('.product-name').textContent = product.name
   productClone.querySelector('.product-descripton').textContent = product.descripton
@@ -42,7 +42,7 @@ const initializeCards = () => {
   }
   
   const selectProduct = products.slice(0, numberOfCards);
-  clearListProductCards(selectProduct)
+  renderProducts(selectProduct)
 }
 
-initializeCards()
+initializeCards() 
