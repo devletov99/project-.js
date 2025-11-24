@@ -5,6 +5,7 @@
   font-family: Montserrat; 
   font-weight: 400;
   color: #515076;
+  list-style: none;
 }
 
 .container {
@@ -13,6 +14,7 @@
   height: 1715px;
   margin: 0 auto;
   background: none;
+  
 }
 
 .background-image {
@@ -24,15 +26,6 @@
   bottom: 1118px;
   left: 85px;
   z-index: -1;
-}
-
-.product-list-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 45px;
-  list-style: none;
-  margin: auto;
 }
 
 .main-title {
@@ -84,6 +77,7 @@
   margin-left: 15px;
   margin-bottom: 25px;
   margin-top: 5px;
+
 }
 
 .product-compaund-item {
@@ -91,7 +85,7 @@
   list-style: circle;
 }
 
-.product-price-label {
+.product-price-cost {
   font-size: 20px;
   line-height: 24px;
   font-weight: 700;
@@ -129,4 +123,12 @@
 
 .button-item.bg-red {
   background-color: #FF0000; 
+}
+
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  gap: 45px;
 }
