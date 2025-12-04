@@ -56,7 +56,7 @@
       </label>
       <label class="user-data">
         Введите пароль:
-        <input placeholder="Пароль" class="input-field" name="password" type="password" id="password" required>
+        <input placeholder="Пароль" class="input-field" name="confirm-password" type="password" id="password" required>
       </label>
       <label class="user-data">
         Повторите пароль:
@@ -65,14 +65,14 @@
       <button class="registration-btn" type="submit">Зарегистрироваться</button>
     </form>
     <div class="container-footer">
-      <ul class="container-product-f">
+      <ul class="container-product-footer">
         <div class="container-title">
           <h3 class="footer-title">Product Cards</h1>
           <p class="hero-title">У нас самые лучшие продукты для кожи!</p>
         </div>
         <div class="nav">
           <span class="name">Подпишись на наши акции:</span>
-          <form class="subscription" id="email-form">
+          <form class="subscription-product" id="email-form">
             <input class="email-input" placeholder="Введи Email..." type="email" name="userEmail" required>
             <button class="subscription-button" type="submit">Подписаться</button>
             <span class="border-left"></span>
@@ -93,16 +93,16 @@
       </footer>
     </div>
     <div class="modal" id="container-modal">
-      <button class="btn-close-window" id="closeBtn">x</button>
+      <button class="btn-close-window" id="close-btn">x</button>
       <span class="title-authorization">Авторизация</span>
       <form id="form-authorization">
         <label class="data-authorization">
           Логин:
-          <input type="text" name="login" class="input-authorization" id="authorization-password">
+          <input type="text" name="login" class="input-authorization" id="authorization-login">
         </label>
         <label class="data-authorization">
           Пароль:
-          <input type="password" name="password" class="input-authorization" id="authorization-login">
+          <input type="password" name="password" class="input-authorization" id="authorization-password">
         </label>
         <button class="btn-authorization" type="submit">Войти</button>
       </form>

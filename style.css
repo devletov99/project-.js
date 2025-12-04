@@ -148,7 +148,7 @@
   font-size: 18px;
 }
 
-.container-product-f {
+.container-product-footer {
   width: 1569px;
   height: 147px;
   margin: 85px;
@@ -173,7 +173,7 @@
   margin-bottom: 289px;
 }
 
-.subscription {
+.subscription-product {
   width: 477px;
   height: 61px;
   display: flex;
@@ -291,7 +291,7 @@
   cursor: pointer;
 }
 
-/*  */
+/* форма регистрации */
 
 .registration-form {
   background-color: #3A3A3A;
@@ -327,7 +327,7 @@
   margin-left: 20%;
 }
 
-/*  */
+/*  модальное окно*/
 
 .modal {
   display: none;
@@ -374,7 +374,6 @@
   background-color: rgba(0, 0, 0, 0.5);
 }
 
-
 .data-authorization {
   color: #FFFFFF;
   margin-top: 30px;
@@ -414,4 +413,3 @@
   font-size: 26px;
   margin-top: 50px;
 }
-
