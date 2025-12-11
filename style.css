@@ -339,11 +339,11 @@
   z-index: 2;
 }
 
-#container-modal.close {
+#modalId.close {
   display: none;
 }
 
-#container-modal.modal-showed{
+#modalId.modal-showed{
   display: block;
 }
 
@@ -366,7 +366,7 @@
   margin-left: 88%;
 }
 
-.container-overlay.overlay {
+#overlay.overlay {
   width: 100%;
   height: 100%;
   position: fixed;

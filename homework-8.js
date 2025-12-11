@@ -32,17 +32,17 @@ const arrayObject = products.reduce((acc, product) => { acc[product.name] = prod
 
 // функция, которая при старте нашей страницы выводит сообщение с текстом, мол "Сколько карточек отобразить? От 1 до 5".
  
-const initializeCards = () => {
-  const userInput = prompt('Сколько карточек отобразить? От 1 до 5');
-  const numberOfCards = Number(userInput);
+// const initializeCards = () => {
+//   const userInput = prompt('Сколько карточек отобразить? От 1 до 5');
+//   const numberOfCards = Number(userInput);
 
-  if (isNaN(numberOfCards) || numberOfCards < 1 || numberOfCards > 5) {
-    alert('Пожалуйста, введите число от 1 до 5');
-    return;
-  }
+//   if (isNaN(numberOfCards) || numberOfCards < 1 || numberOfCards > 5) {
+//     alert('Пожалуйста, введите число от 1 до 5');
+//     return;
+//   }
   
-  const selectProduct = products.slice(0, numberOfCards);
-  renderProducts(selectProduct)
-}
+//   const selectProduct = products.slice(0, numberOfCards);
+//   renderProducts(selectProduct)
+// }
 
-initializeCards() 
+// initializeCards() 
