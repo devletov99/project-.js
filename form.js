@@ -15,35 +15,28 @@ class Form {
   this.addSubmitHandler(); 
   }
 
-  addSubmitHandler () {
+  addSubmitHandler() {
     this.form.addEventListener('submit', (event) => {
       event.preventDefault();
       if (this.validate()) {
-       this.handleSubmit();
+       this.getValues();
       }
     });
   }
 
-  validate() {
+  isValidateForm() {
     const formData = new FormData(this.form);
     const data = Object.fromEntries(formData.entries());
-
-    const isFormValid = this.form.checkValidity();
-    if (!isFormValid) {
-      this.form.reportValidity();
-      return false;
-    }
-    return true;
+    
+    return this.form.checkValidity()
   }
 
-  handleSubmit() {
+  getValues() {
     const formData = new FormData(this.form);
     const data = Object.fromEntries(formData.entries());
-
-    console.log(data) 
 
     this.form.reset();
+
+    return data;
   }
 }
-
-const form = new Form('regist-form')

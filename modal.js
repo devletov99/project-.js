@@ -39,7 +39,7 @@ class Modal {
 
   }
 
-    close() {
+  close() {
     this.modal.classList.remove('modal-showed');
     this.overlay.classList.remove('overlay');
   } 
@@ -48,5 +48,3 @@ class Modal {
     return this.modal.classList.contains('modal-showed');
   }
 }
-
-const modal = new Modal('modal-id', 'open-btn', 'close-btn', 'overlay');
