@@ -25,30 +25,20 @@ class Form {
   }
 
   validate() {
-    let isValid = true;
     const formData = new FormData(this.form);
     const data = Object.fromEntries(formData.entries());
 
-    for (let element of this.form.elements) {
-      if (element.required && !element.value.trim()) {
-        isValid = false;
-        element.classList.add('input-error');
-        return;
-      } else {
-        element.classList.remove('input-error');
-      }
+    const isFormValid = this.form.checkValidity();
+    if (!isFormValid) {
+      this.form.reportValidity();
+      return false;
     }
-    return isValid;
+    return true;
   }
 
   handleSubmit() {
     const formData = new FormData(this.form);
     const data = Object.fromEntries(formData.entries());
-
-    if (data.password !== data.confirmPassword) {
-    alert('Пароли не совпадают');
-    return;
-    }
 
     console.log(data) 
 
@@ -56,4 +46,4 @@ class Form {
   }
 }
 
-const form = new Form('registForm')
+const form = new Form('regist-form')

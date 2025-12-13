@@ -49,4 +49,4 @@ class Modal {
   }
 }
 
-const modal = new Modal('modalId', 'openBtn', 'closeBtn', 'overlay');
+const modal = new Modal('modal-id', 'open-btn', 'close-btn', 'overlay');

@@ -339,11 +339,11 @@
   z-index: 2;
 }
 
-#modalId.close {
+#modal-id.close {
   display: none;
 }
 
-#modalId.modal-showed{
+#modal-id.modal-showed{
   display: block;
 }
 
