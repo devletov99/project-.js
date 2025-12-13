@@ -10,12 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-  <div class="container-overlay"></div>
+  <div class="modal-overlay" id="overlay"></div>
   <div class="container">
     <div class="background-image"></div>
       <h1 class="main-title">Выбери свой продукт</h1>
     <div class="product-catalog__button">
-      <button class="button-item" id="authentication-bttn">Аутентификация</button>
+      <button class="button-item" id="open-btn">Аутентификация</button>
       <button class="button-item" id="change-color-card-button">сменить цвет карточки</button>
       <button class="button-item" id="change-color-cards-button">сменить цвет всех карточек</button>
       <button class="button-item" id="open-google">открыть страницу google</button>
@@ -48,7 +48,7 @@
       </label>
       <label class="user-data">
         Введите дату рождения:
-        <input class="input-field" type="date" required>
+        <input class="input-field" name="userBirth" type="date" required>
       </label>
       <label class="user-data">
         Введите логин:
@@ -56,11 +56,11 @@
       </label>
       <label class="user-data">
         Введите пароль:
-        <input placeholder="Пароль" class="input-field" name="confirm-password" type="password" id="password" required>
+        <input placeholder="Пароль" class="input-field" name="password" type="password" id="password" required>
       </label>
       <label class="user-data">
         Повторите пароль:
-        <input placeholder="Ещё раз пароль" class="input-field" name="password" type="password" id="confirm-password" required>
+        <input placeholder="Ещё раз пароль" class="input-field" name="confirmPassword" type="password" id="confirm-password" required>
       </label>
       <button class="registration-btn" type="submit">Зарегистрироваться</button>
     </form>
@@ -92,7 +92,7 @@
         <a class="product-link" href="www.product-cards.com">www.product-cards.com©all right reserve</a>
       </footer>
     </div>
-    <div class="modal" id="container-modal">
+    <div class="modal" id="modal-id">
       <button class="btn-close-window" id="close-btn">x</button>
       <span class="title-authorization">Авторизация</span>
       <form id="form-authorization">
@@ -108,7 +108,6 @@
       </form>
     </div>
   </div>
-  <script type="module" src="homework-8.js"></script>
-  <script type="module" src="homework-9.js"></script>
+  <script type="module" src="main.js"></script>
 </body>
 </html> 
