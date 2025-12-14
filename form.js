@@ -25,9 +25,6 @@ class Form {
   }
 
   isValidateForm() {
-    const formData = new FormData(this.form);
-    const data = Object.fromEntries(formData.entries());
-    
     return this.form.checkValidity()
   }
 

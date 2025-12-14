@@ -44,7 +44,7 @@ class Modal {
     this.overlay.classList.remove('overlay');
   } 
 
-  isOpenByClass() {
+  isOpen() {
     return this.modal.classList.contains('modal-showed');
   }
 }
