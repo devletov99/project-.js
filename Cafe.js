@@ -1,5 +1,6 @@
-import {Drink} from "./Drink.js";
+import { Coffee } from "./coffee.js";
 import {Tea} from "./Tea.js";
+import {HotChocolate} from "./HotChocolate.js";
 
 class Cafe {
   constructor(name, location) {
@@ -16,8 +17,3 @@ class Cafe {
     return `Ваш заказ:  ${drink.getDrinkInfo()}`;
   }
 }
-
-// const cafe = new Cafe('Terassa', 'Буйнакск');
-// console.log(cafe.getCafeInfo());
-// const tea = new Tea('Зеленый чай', 250, 4.0, 75, 'Зеленый', 'Заварной', 'Китай', 'Мед');
-// console.log(cafe.orderDrink(tea));
