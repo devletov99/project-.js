@@ -1,21 +1,21 @@
 export class Drink {
-  #temperatureValue;
+  #temperatureInfo;
   #temperatureLabel
 
   constructor(name, weight, price, temperature) {
     this.name = name;
     this.weight = weight;
     this.price = price;
-    this.#temperatureValue = temperature; 
+    this.#temperatureInfo = temperature; 
     this.#temperatureLabel = this.#setTemperatureDrink(temperature)
   }
 
   getDrinkInfo() {
-    return `Drink: ${this.name}, Weight: ${this.weight}ml, Price: $${this.price}, Temperature: ${this.#temperatureLabel, this.#temperatureValue}°C`;
+    return `Drink: ${this.name}, Weight: ${this.weight}ml, Price: $${this.price}, Temperature: ${this.#temperatureLabel, this.#temperatureInfo}°C`;
   }
 
   getTemperature(newTemperature) {
-    this.#temperatureValue = newTemperature;
+    this.#temperatureInfo = newTemperature;
     return this.#setTemperatureDrink();
   }
 
@@ -38,7 +38,7 @@ export class Drink {
   #prepareDrink() {
     const prepSteps = [
       `Приготовление напитка ${this.name}`,
-      `Нагреваем до ${this.#temperatureValue}°C`,
+      `Нагреваем до ${this.#temperatureInfo}°C`,
       `Напиток ${this.name} готов к подаче!`,
     ]
     return prepSteps.join('\n');

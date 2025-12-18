@@ -1,8 +1,4 @@
-import { Coffee } from "./coffee.js";
-import {Tea} from "./Tea.js";
-import {HotChocolate} from "./HotChocolate.js";
-
-class Cafe {
+export class Cafe {
   constructor(name, location) {
     this.name = name;
     this.location = location;
