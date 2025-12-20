@@ -1,17 +1,16 @@
 export class Drink {
   #temperatureInfo;
-  #temperatureLabel
 
   constructor(name, weight, price, temperature) {
     this.name = name;
     this.weight = weight;
     this.price = price;
     this.#temperatureInfo = temperature; 
-    this.#temperatureLabel = this.#setTemperatureDrink(temperature)
+    this.#setTemperatureDrink(temperature)
   }
 
   getDrinkInfo() {
-    return `Drink: ${this.name}, Weight: ${this.weight}ml, Price: $${this.price}, Temperature: ${this.#temperatureLabel, this.#temperatureInfo}°C`;
+    return `Drink: ${this.name}, Weight: ${this.weight}ml, Price: $${this.price}, Temperature: ${this.#temperatureInfo}°C`;
   }
 
   getTemperature(newTemperature) {
