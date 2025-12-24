@@ -23,8 +23,9 @@ export class Modal {
     this.modal.classList.remove('modal-showed');
     this.overlay.classList.remove('overlay-showed'); 
 
-    this.overlay.removeEventListener('click', this.onClickClose);
-    this.closeButton.removeEventListener('click', this.onClickClose);
+    if (this.shouldCloseOnOverlay)
+      this.overlay.removeEventListener('click', this.onClickClose);
+      this.closeButton.removeEventListener('click', this.onClickClose);
   }
 
   isOpen() {
@@ -42,7 +43,7 @@ export class Modal {
   #initClose() {
     this.closeButton.addEventListener('click', this.onClickClose);
 
-    if(this.shouldCloseOnOverlay) {
+    if (this.shouldCloseOnOverlay) {
       this.overlay.addEventListener('click', this.onClickClose);
     };   
   } 
