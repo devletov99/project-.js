@@ -1,0 +1,55 @@
+[
+  { 
+    "img": "user",
+    "id": 1,
+    "name": "Иван",
+    "surname": "Иванов",
+    "email": "ivanov@mail.ru",
+    "age": 18
+  },
+
+  {
+    "img": "user",
+    "id": 2,
+    "name": "Алексей",
+    "surname": "Алексеев",
+    "email": "alex@mail.ru",
+    "age": 19
+  },
+
+  {
+    "img": "user",
+    "id": 3,
+    "name": "Петр",
+    "surname": "Петров",
+    "email": "petr@mail.com",
+    "age": 33
+  },
+
+  {
+    "img": "user",
+    "id": 4,
+    "name": "Василий",
+    "surname": "Пиражков",
+    "email": "vasiliy@gmail.com",
+    "age": 25
+  },
+
+  {
+    "img": "user",
+    "id": 5,
+    "name": "Андрей",
+    "surname": "Андреев",
+    "email": "andreev@gmail.com",
+    "age": 25
+  },
+
+  {
+    "img": "user",
+    "id": 6,
+    "name": "Вадим",
+    "surname": "Валерьев",
+    "email": "valya@gmail.com",
+    "age": 25
+  }
+]
